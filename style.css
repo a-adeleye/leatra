@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1020px;
+}
+
+.landing-page {
+  height: 100vh;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 23%, #029ec9 97%);
+}
+
+nav,
+.nav-secondary {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6em;
+}
+
+.nav-secondary {
+  background-color: white;
+}
+
+.nav--logo {
+  height: 5em;
+}
+
+.nav--logo img {
+  height: 100%;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  justify-self: flex-end;
+}
+
+nav a {
+  color: white;
+  padding: 12px 12px;
+  text-decoration: none;
+}
+
+#contactUs {
+  border: 1px solid white;
+  padding: 12px 26px;
+}
+
+nav a:hover {
+  border-bottom: solid white 1px;
+}
+
+#contactUs:hover {
+  background: white;
+  color: #045de9;
+}
+
+.trusted-by {
+  height: 100vh;
+  background-image: linear-gradient(
+    90deg,
+    rgb(20, 152, 235) 1.64%,
+    rgb(150, 45, 227) 100%
+  );
+}
+
+.services {
+  height: 100vh;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
