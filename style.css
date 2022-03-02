@@ -16,8 +16,14 @@ body {
 }
 
 .hero {
-  max-height: 500px;
+  height: 70vh;
+  max-height: 600px;
+  max-width: 1300px;
   padding: 0 6em;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide {
@@ -69,6 +75,7 @@ nav {
   height: 4em;
   margin: auto;
   padding: 2.5em 3em;
+  max-width: 1300px;
 }
 
 .scrolled {
@@ -356,6 +363,7 @@ button:hover {
 .contact-us--container {
   display: flex;
   width: 70%;
+  max-width: 800px;
   gap: 1em;
   align-items: center;
   border: 1px solid #0f1c70;
