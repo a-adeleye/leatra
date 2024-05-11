@@ -1,6 +1,0 @@
-<svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: #066ac9;overflow: hidden;"
-     version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-  <path d="M755.2 537.6l38.4-102.4H230.4l38.4 102.4h80.64L371.2 832h-51.2v38.4h384v-38.4h-51.2l21.76-294.4z"/>
-  <path d="M448 217.6a64 64 0 1 0 128 0 64 64 0 1 0-128 0Z"/>
-  <path d="M422.4 281.6h179.2c28.16 0 51.2 23.04 51.2 51.2v76.8H371.2v-76.8c0-28.16 23.04-51.2 51.2-51.2z"/>
-</svg>
