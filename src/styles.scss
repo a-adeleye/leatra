@@ -1,1 +1,302 @@
-/* You can add global styles to this file, and also import other style files */
+@import "styles/theme.css";
+@import "styles/theme-elements.css";
+@import 'animate.css';
+
+$primary: #066ac9;
+
+@import "bootstrap/scss/bootstrap";
+
+.btn-primary {
+  color: #fff;
+}
+
+.custom-hero-row {
+  min-height: calc(100vh - 100px);
+}
+
+.custom-element-wrapper {
+  position: absolute;
+}
+
+.custom-element-wrapper.custom-element-1 {
+  top: 25%;
+  left: 45%;
+  width: 300px;
+  height: 300px;
+}
+
+.custom-element-wrapper.custom-element-1 .custom-element {
+  background: 0 0;
+  border: 3px solid var(--primary);
+  opacity: 0.05;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.custom-element-wrapper.custom-element-2 {
+  top: 45%;
+  left: 62%;
+  width: 150px;
+  height: 150px;
+}
+
+.custom-element-wrapper.custom-element-2 .custom-element {
+  background: var(--primary);
+  opacity: 0.05;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.custom-element-wrapper.custom-element-3 {
+  top: 57%;
+  left: 70%;
+  width: 100px;
+  height: 100px;
+}
+
+.custom-element-wrapper.custom-element-3 .custom-element {
+  background: 0 0;
+  border: 3px solid var(--primary);
+  opacity: 0.05;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.custom-element-wrapper.custom-element-4 {
+  top: 57%;
+  left: 44%;
+  width: 100px;
+  height: 100px;
+}
+
+.custom-element-wrapper.custom-element-4 .custom-element {
+  background: var(--primary);
+  opacity: 0.03;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.custom-element-wrapper.custom-element-5 {
+  top: 18%;
+  left: 7%;
+  width: 450px;
+  height: 450px;
+}
+
+.custom-element-wrapper.custom-element-5 .custom-element {
+  background: var(--secondary);
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+  .custom-element-wrapper.custom-element-5 {
+    top: 18%;
+    left: 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-element-wrapper.custom-element-5 {
+    top: 27%;
+    left: 22%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-element-wrapper.custom-element-5 {
+    top: 22%;
+    left: 22%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .custom-element-wrapper.custom-element-5 {
+    top: 27%;
+    left: 78%;
+  }
+}
+
+.custom-element-wrapper.custom-element-6 {
+  width: 160px;
+  height: 160px;
+  top: 22.2%;
+  right: -8%;
+}
+
+.custom-element-wrapper.custom-element-7 {
+  width: 160px;
+  height: 160px;
+  top: 58.2%;
+  right: -38%;
+}
+
+.custom-element-wrapper.custom-element-8 {
+  top: -5%;
+  left: -6%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 81% 100%, 0 55%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 81% 100%, 0 55%);
+  height: 615px;
+}
+
+@media (max-width: 490px) {
+  .custom-element-wrapper.custom-element-8 {
+    top: -6%;
+    left: -11.8%;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-element-wrapper.custom-element-8 {
+    top: -5%;
+    left: 4.2%;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-element-wrapper.custom-element-8 {
+    top: 5%;
+    left: 6%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-element-wrapper.custom-element-8 {
+    top: 2%;
+    left: 10%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .custom-element-wrapper.custom-element-8 {
+    top: 5%;
+    left: 62%;
+  }
+}
+
+.custom-element-wrapper.custom-element-9 {
+  width: 160px;
+  height: 160px;
+  top: 5%;
+  left: 7%;
+}
+
+.custom-element-wrapper.custom-element-10 {
+  width: 160px;
+  height: 160px;
+  top: 65%;
+  right: 10%;
+}
+
+.custom-element-wrapper.custom-element-11 {
+  display: inline-block;
+}
+
+.custom-element-wrapper.custom-element-11 img {
+  border-radius: 25px;
+}
+
+.custom-element-wrapper.custom-element-11:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  background: var(--primary);
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.page-header {
+  padding-top: 153px;
+  padding-bottom: 0;
+}
+
+.page-header .container:before {
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.06);
+  position: absolute;
+}
+
+.breadcrumb li {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.breadcrumb > li + li:before {
+  padding: 0 7px;
+}
+
+hr {
+  opacity: 1;
+}
+
+.brands .img-fluid {
+  max-height: 45px;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  min-height: 208px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+.custom-prev-btn, .custom-next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  background-color: var(--dark);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%
+}
+
+
+.custom-prev-btn {
+  left: 10px;
+}
+
+.custom-next-btn {
+  right: 10px;
+}
+
+.map {
+  height: 300px;
+  background-image: url("/assets/images/map.png");
+  background-position: center;
+}
+
+
+.contact-bg {
+  background-image: url('/assets/images/parallax-1.jpg') !important;
+  background-size: cover !important;
+}
+
+.alert-success {
+  background-color: #52f8ac !important;
+  color: #005513 !important;
+}
+
+
+.alert-danger {
+  background-color: #ffb8be !important;
+}
+

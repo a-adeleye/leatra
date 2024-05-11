@@ -1,0 +1,10 @@
+# Allow all robots complete access
+User-agent: *
+Disallow:
+
+# Block access to specific folders
+Disallow: /private/
+Disallow: /tmp/
+
+# Sitemap location
+Sitemap: https://leatra.com/sitemap.xml

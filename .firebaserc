@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "leatra-f77a8": {
+      "hosting": {
+        "leatra": [
+          "leatra-f77a8"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "leatra-f77a8"
+  }
+}

@@ -1,0 +1,158 @@
+<header class="header-transparent" id="header">
+  <div [ngClass]="{'sticky': isSticky}" class="header-body border-top-0 h-auto box-shadow-none">
+    <div class="header-top header-top-borders">
+      <div class="container h-100">
+        <div class="header-row h-100">
+          <div class="header-column justify-content-start">
+            <div class="header-row">
+              <nav class="header-nav-top">
+                <ul class="nav nav-pills">
+                  <li class="nav-item py-2 d-none d-sm-inline-flex pe-2">
+                    <span class="ps-0 font-weight-semibold text-grey-1000 text-2-5">Lagos, Nigeria</span>
+                  </li>
+                  <li class="nav-item py-2 pe-2">
+                    <a class=" text-2-5 text-color-hover-primary font-weight-semibold text-grey-1000"
+                       href="tel:08081685698">+234 8081 685
+                      698</a>
+                  </li>
+                  <li class="nav-item py-2 d-none d-md-inline-flex">
+                    <a class="text-grey-1000 text-2-5 text-color-hover-primary font-weight-semibold"
+                       href="mailto:info@leatra.com"><span
+                      class="__cf_email__">info&#64;leatra.com</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+          <div class="header-column justify-content-end">
+            <div class="header-row">
+              <nav class="header-nav-top">
+                <ul class="nav nav-pills p-relative bottom-2">
+                  <li class="nav-item py-2 d-none d-lg-inline-flex">
+                    <a
+                      class="text-color-dark text-color-hover-primary text-3 anim-hover-translate-top-5px transition-2ms"
+                      href="https://www.facebook.com/leatraltd" target="_blank"
+                      title="Facebook"><i
+                      class="fab fa-facebook-f text-3 p-relative top-1"></i></a>
+                  </li>
+                  <li class="nav-item py-2 d-none d-lg-inline-flex">
+                    <a
+                      class="text-color-dark text-color-hover-primary text-3 anim-hover-translate-top-5px transition-2ms"
+                      href="https://www.x.com/leatraltd" target="_blank"
+                      title="Twitter">
+                      <i class="fa-brands fa-x-twitter text-3 p-relative top-1"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item py-2 d-none d-lg-inline-flex">
+                    <a
+                      class="text-color-dark text-color-hover-primary text-3 anim-hover-translate-top-5px transition-2ms"
+                      href="https://www.instagram.com/leatraltd" target="_blank"
+                      title="Instagram"><i
+                      class="fab fa-instagram text-3 p-relative top-1"></i></a>
+                  </li>
+                  <li class="nav-item py-2 pe-0 d-none d-lg-inline-flex">
+                    <a
+                      class="text-color-dark text-color-hover-primary text-3 anim-hover-translate-top-5px transition-2ms"
+                      href="https://www.linkedin.com/leatraltd" target="_blank"
+                      title="Linkedin"><i
+                      class="fab fa-linkedin-in text-3 p-relative top-1"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-container header-container-height-sm container p-static">
+      <div class="header-row">
+        <div class="header-column">
+          <div class="header-row">
+            <div class="header-logo">
+              <a href="#">
+                <img alt="Leatra" height="50" ngSrc="/assets/images/logo.png" priority width="124">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-column justify-content-end">
+          <div class="header-row">
+            <div class="header-nav header-nav-links">
+              <div
+                class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-dropdown-border-radius header-nav-main-text-capitalize header-nav-main-text-size-4 header-nav-main-arrows header-nav-main-full-width-mega-menu header-nav-main-mega-menu-bg-hover header-nav-main-effect-2">
+                <nav class="collapse animate__animated animate__fadeIn">
+                  <ul class="nav nav-pills" id="mainNav">
+                    <li class="dropdown">
+                      <a class="nav-link" href="" routerLink="/" routerLinkActive="active">
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" routerLink="/about-us" routerLinkActive="active">
+                        About Us
+                      </a>
+                    </li>
+                    <li class="dropdown">
+                      <a class="nav-link dropdown-toggle" routerLink="/our-services" routerLinkActive="active">Our
+                        Services</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" routerLink="/our-services/corporate-training"
+                             routerLinkActive="active">Corporate Training</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/our-services/e-learning" routerLinkActive="active">E-Learning</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/our-services/skill-assessment"
+                             routerLinkActive="active">Skill Assessment</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" routerLink="/our-services/quality-assurance"
+                             routerLinkActive="active">CX / Quality Assurance</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <a
+                class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-3 me-2 d-sm-block d-none d-xl-block anim-hover-translate-right-5px transition-2ms"
+                routerLink="/contact-us">
+                Contact Us <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+              <button (click)="showMenu = !showMenu" aria-label="Menu" class="btn header-btn-collapse-nav">
+                <i class="fa fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @if (showMenu) {
+      <nav [ngClass]="{'opacity-0': !showMenu}" class="mobile-menu bg-white p-3 d-lg-none d-flex"
+           (click)="showMenu = false">
+        <ul class="nav nav-pills gap-2">
+          <li class="dropdown">
+            <a class="nav-link" href="" routerLink="/" routerLinkActive="active">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" routerLink="/about-us" routerLinkActive="active">
+              About Us
+            </a>
+          </li>
+          <li class="">
+            <a class="nav-link " routerLink="/our-services" routerLinkActive="active">Our
+              Services</a>
+          </li>
+        </ul>
+      </nav>
+    }
+  </div>
+</header>
+<a [ngClass]="{'visible': isSticky}" aria-label="Scroll To Top" class="scroll-to-top hidden-mobile visible" href="#"><i
+  class="fas fa-chevron-up"></i></a>

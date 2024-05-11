@@ -1,0 +1,83 @@
+<section class="parallax section section-text-light section-parallax bg-primary m-0 contact-bg" data-aos="fade-up"
+         id="contact-us">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="feature-box align-items-center border-0 float-lg-end mb-4 mb-lg-0">
+          <div class="feature-box-icon bg-transparent">
+            <i class="fa fa-phone text-6 text-color-light"></i>
+          </div>
+          <div class="feature-box-info line-height-2 ps-1">
+                <span
+                  class="d-block text-1 text-light font-weight-semibold text-color-default ws-nowrap">CALL US NOW</span>
+            <strong class="text-4-5">
+              <a class="text-color-light text-decoration-none ws-nowrap" href="tel:+2348081685698">+234 8081 685
+                698</a></strong>
+          </div>
+        </div>
+        <h2 class="text-color-light font-weight-bold text-8 pb-4 mb-0"> Best In Class In Nigeria And Africa</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="border-top border-color-light-5 text-light pt-4">
+
+          <form [formGroup]="contactForm" class="row align-items-center">
+            @if (success) {
+              <div class="col-12 mb-3">
+                <div class="d-grid gap-2 alert alert-success">
+                  Message sent. We will get back to you shortly.
+                </div>
+              </div>
+            }
+
+            @if (error) {
+              <div class="col-12 mb-3">
+                <div class="d-grid gap-2 alert alert-danger">
+                  Message not sent. Please try again.
+                </div>
+              </div>
+            }
+            <div class="col-12 mb-3 mb-lg-0 col-lg">
+              <h2 class="text-color-light font-weight-bold text-5 mb-0">Request a Call Back</h2>
+            </div>
+            <div class="col-12 mb-3 mb-lg-0 col-lg">
+              <input aria-label="Subject" class="form-control text-3 h-auto py-3 line-height-1 border-0"
+                     formControlName="subject" placeholder="Subject *" type="text">
+            </div>
+            <div class="col-12 mb-3 mb-lg-0 col-lg">
+              <input aria-label="Full Name" class="form-control text-3 h-auto py-3 line-height-1 border-0"
+                     formControlName="name" placeholder="Full Name *" type="text">
+            </div>
+            <div class="col-12 mb-3 mb-lg-0 col-lg">
+              <input aria-label="Email" class="form-control text-3 h-auto py-3 line-height-1 border-0"
+                     formControlName="email" placeholder="Email *" type="email">
+            </div>
+            <div class="col-12 mb-3 mb-lg-0 col-lg">
+              <input aria-label="Phone Number" class="form-control text-3 h-auto py-3 line-height-1 border-0"
+                     formControlName="phone" placeholder="Phone Number *" type="tel">
+            </div>
+            <div class="col-12 mb-3 mb-lg-0 col-lg">
+              <div class="d-grid gap-2">
+                <button (click)="sendEmail()" [disabled]="contactForm.invalid || loading"
+                        class="btn btn-modern btn-dark btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms"
+                >@if (!loading) {
+                  Submit
+                  <i class="fas fa-arrow-right ms-2"></i>
+                } @else {
+                  <div class="spinner-border spinner-border-sm text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                }
+
+                </button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

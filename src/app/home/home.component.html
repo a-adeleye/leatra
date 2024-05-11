@@ -1,0 +1,270 @@
+<div class="main" role="main">
+
+  <section class="section border-0 m-0 bg-color-quaternary p-relative">
+    <div class="container">
+
+      <div class="row custom-hero-row">
+
+        <div class="col">
+          <div class="row pt-5 mt-5 mb-5 pb-5">
+            <div class="col-12 col-lg-6 p-relative pt-5 mt-5">
+              <div class="divider divider-small divider-small-lg animate__animated animate__fadeInUp">
+                <hr class="bg-primary border-radius"/>
+              </div>
+
+              <div class="overflow-hidden mb-1">
+                <h2
+                  class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0 animate__animated animate__fadeInUp">
+                  A leading consulting firm</h2>
+              </div>
+              <h1 class="text-color-dark font-weight-bold text-9 pb-2 mb-4 animate__animated animate__fadeInUp">
+                Premier Business and <br>Leadership Training.</h1>
+              <div class="d-block animate__animated animate__fadeInUp">
+
+                <button
+                  class="btn btn-modern btn-primary btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms"
+                  href="#start">
+                  Learn More <i class="fas fa-arrow-right ms-2"></i></button>
+              </div>
+              <div class="pt-5 animate__animated animate__fadeInUp">
+											<span class="d-inline-block anim-hover-translate-bottom-5px transition-2ms">
+												<a
+                          aria-label="Check details"
+                          class="btn btn-default text-color-primary border-color-primary bg-transparent rotate-r-90 btn-circle border-width-2 btn-lg"
+                          href="#about-us">
+                          <i class="fas fa-arrow-right"></i></a>
+											</span>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 p-relative text-end">
+
+              <div class="custom-element-wrapper custom-element-6 animate__animated animate__zoomIn">
+                <div class="bg-color-primary particle particle-dots w-100 h-100 opacity-3"></div>
+              </div>
+
+              <div class="custom-element-wrapper custom-element-7 animate__animated animate__zoomIn animated__slow">
+                <div class="bg-color-primary particle particle-dots w-100 h-100 opacity-3"></div>
+              </div>
+
+              <div
+                class="custom-element-wrapper p-relative custom-element-5 animate__animated animate__zoomIn animated__slow">
+                <div class="w-100 h-100">
+                  <div class="custom-element rotate-r-45"></div>
+                </div>
+              </div>
+
+              <img alt=""
+                   class="img-fluid custom-element-wrapper custom-element-8 animate__animated animate__fadeInUp"
+                   src="/assets/images/generic/black-woman-corporate.png">
+            </div>
+          </div>
+          <div class="row align-items-end justify-content-end pt-5">
+            <div class="col-lg-9 text-end pt-5">
+              <div class="animate__animated animate__fadeInUp carousel-container">
+                <owl-carousel-o #owlCar [options]="customOptions">
+                  <ng-template carouselSlide>
+                    <div class="overlay overlay-color-dark overlay-show overlay-op-9 rounded overflow-hidden">
+                      <img alt="" class="img-fluid rounded" src="/assets/images/generic/generic-3.jpg">
+                      <a
+                        class="p-absolute z-index-2 top-0 left-0 w-100 h-100 anim-hover-translate-top-5px transition-2ms"
+                        href="#">
+														<span class="p-absolute left-0 bottom-0 text-color-light text-start ms-4 mb-3 ps-2 pb-1">
+															<strong class="text-5 negative-ls-05 font-weight-bold">Building for Growth</strong>
+															<p class="font-weight-medium text-color-light opacity-7 p-relative bottom-4 mb-0">Bridging gaps, building futures...</p>
+														</span>
+                      </a>
+                    </div>
+
+                  </ng-template>
+                  <ng-template carouselSlide>
+                    <div class="overlay overlay-color-primary overlay-show overlay-op-8 rounded overflow-hidden">
+                      <img alt="" class="img-fluid rounded" src="/assets/images/generic/generic-4.jpg">
+                      <a
+                        class="p-absolute z-index-2 top-0 left-0 w-100 h-100 anim-hover-translate-top-5px transition-2ms"
+                        href="#">
+														<span class="p-absolute left-0 bottom-0 text-color-light text-start ms-4 mb-3 ps-2 pb-1">
+															<strong class="text-5 negative-ls-05 font-weight-bold">Why Choose Us</strong>
+															<p class="font-weight-medium text-color-light opacity-7 p-relative bottom-4 mb-0">We are the best in class...</p>
+														</span>
+                      </a>
+                    </div>
+
+                  </ng-template>
+                  <ng-template carouselSlide>
+                    <div class="overlay overlay-color-dark overlay-show overlay-op-9 rounded overflow-hidden">
+                      <img alt="" class="img-fluid rounded" src="/assets/images/generic/generic-5.jpg">
+                      <a
+                        class="p-absolute z-index-2 top-0 left-0 w-100 h-100 anim-hover-translate-top-5px transition-2ms"
+                        href="#">
+														<span class="p-absolute left-0 bottom-0 text-color-light text-start ms-4 mb-3 ps-2 pb-1">
+															<strong class="text-5 negative-ls-05 font-weight-bold">Welcome to Leatra </strong>
+															<p class="font-weight-medium text-color-light opacity-7 p-relative bottom-4 mb-0">Start here, transform everywhere...</p>
+														</span>
+                      </a>
+                    </div>
+                  </ng-template>
+                </owl-carousel-o>
+                <button (click)="prev()" aria-label="Previous" class="custom-prev-btn">
+                  <svg class="feather feather-chevron-left" fill="none" height="24" stroke="currentColor"
+                       stroke-linecap="round"
+                       stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                       xmlns="https://www.w3.org/2000/svg">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <button (click)="next()" aria-label="Next" class="custom-next-btn">
+                  <svg class="feather feather-chevron-right" fill="none" height="24" stroke="currentColor"
+                       stroke-linecap="round"
+                       stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                       xmlns="https://www.w3.org/2000/svg">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-element-wrapper custom-element-1 animate__animated animate__zoomIn">
+      <div class="w-100 h-100">
+        <div class="custom-element rotate-r-45"></div>
+      </div>
+    </div>
+
+    <div class="custom-element-wrapper custom-element-2 animate__animated animate__zoomIn">
+      <div class="w-100 h-100">
+        <div class="custom-element rotate-r-45"></div>
+      </div>
+    </div>
+
+    <div class="custom-element-wrapper custom-element-3 animate__animated animate__zoomIn">
+      <div class="w-100 h-100">
+        <div class="custom-element rotate-r-45"></div>
+      </div>
+    </div>
+
+    <div class=" custom-element-wrapper custom-element-4 animate__animated animate__zoomIn">
+      <div class="w-100 h-100">
+        <div class="custom-element rotate-r-45"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section border-0 bg-transparent m-0" id="about-us">
+    <div class="container py-5 mb-3">
+      <div class="row">
+        <div class="col text-center">
+
+          <div class="divider divider-small divider-small-lg mt-0 text-center" data-aos="fade-up">
+            <hr class="bg-primary border-radius m-auto">
+          </div>
+          <div class="overflow-hidden mb-1">
+            <h3
+              class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0"
+              data-aos="fade-up" data-aos-duration="2000">Our Mission</h3>
+          </div>
+          <h2 class="text-color-dark font-weight-bold text-8 pb-2 mb-4" data-aos="fade-up">We are committed to
+            building the right talent <br>for Africa for sustainable development</h2>
+        </div>
+      </div>
+      <div class="row pt-4 pb-5">
+        <div class="col-lg-6 text-center p-relative pt-5">
+
+          <div class="custom-element-wrapper custom-element-9" data-aos="zoom-in-up">
+            <div class="bg-color-primary particle particle-dots w-100 h-100 opacity-3"></div>
+          </div>
+
+          <div class="custom-element-wrapper custom-element-10" data-aos="zoom-in-up">
+            <div class="bg-color-primary particle particle-dots w-100 h-100 opacity-3"></div>
+          </div>
+          <div data-aos="fade-up">
+            <div class=" custom-element-wrapper custom-element-11 p-relative rotate-r-45">
+              <img alt="" class="img-fluid" src="/assets/images/generic/generic-6.jpg">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-6 pt-5 mt-5 pt-lg-0 mt-lg-0">
+          <div data-aos="fade-up" data-aos-duration="300">
+            <p class="font-weight-medium text-4-5 line-height-5">We provide inspiration and the platform for
+              continuous improvement as well as the tools to align education with skills
+              needed in the workforce.</p>
+            <p class="text-3-5">At Leatra, we believe learning must be simple and can happen anywhere.</p>
+
+            <ul class="list list-icons list-icons-style-2 list-icons-lg">
+              <li class="line-height-9 text-3-5 mb-1">
+                <i class="fas fa-check border-width-2 text-3"></i>Unique learning model.
+              </li>
+              <li class="line-height-9 text-3-5 mb-1">
+                <i class="fas fa-check border-width-2 text-3"></i>Comprehensive training programs.
+              </li>
+              <li class="line-height-9 text-3-5 mb-1">
+                <i class="fas fa-check border-width-2 text-3"></i>Endless possibilities for learners and educators.
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-block pt-4" data-aos="fade-up">
+            <a
+              class="btn btn-modern btn-primary btn-arrow-effect-1 text-capitalize text-2-5 px-5 py-3 anim-hover-translate-top-5px transition-2ms"
+              routerLink="about-us">Learn
+              More <i class="fas fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-services/>
+
+  <app-stat/>
+
+  <app-testimonials/>
+
+  <section class="section border-0 bg-light m-0 pt-0">
+    <div class="container py-5">
+      <div class="row align-items-center text-center justify-content-center brands">
+        <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
+          <img alt="" class="img-fluid" data-aos="zoom-in-up" src="/assets/images/brands/GTBank.png"
+               style="max-width: 140px;">
+        </div>
+        <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
+          <img alt="" class="img-fluid" data-aos="zoom-in-up" src="/assets/images/brands/interswitch.png"
+               style="max-width: 140px;">
+        </div>
+        <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
+          <img alt="" class="img-fluid" data-aos="zoom-in-up" src="/assets/images/brands/nis.png"
+               style="max-width: 140px;">
+        </div>
+        <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
+          <img alt="" class="img-fluid" data-aos="zoom-in-up" src="/assets/images/brands/rsw.png"
+               style="max-width: 140px;">
+        </div>
+        <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
+          <img alt="" class="img-fluid" data-aos="zoom-in-up" src="/assets/images/brands/cash_tokens.png"
+               style="max-width: 140px;">
+        </div>
+        <div class="col-sm-4 col-lg-2 mb-5 mb-sm-0">
+          <img alt="" class="img-fluid" data-aos="zoom-in-up" src="/assets/images/brands/redeem.png"
+               style="max-width: 140px;">
+        </div>
+        <div class="col-sm-4 col-lg-2 mb-5 mb-sm-0">
+          <img alt="" class="img-fluid" data-aos="zoom-in-up" src="/assets/images/brands/agpmpn.png"
+               style="max-width: 140px;">
+        </div>
+        <div class="col-sm-4 col-lg-2">
+          <img alt="" class="img-fluid" data-aos="zoom-in-up" src="/assets/images/brands/outcess.png"
+               style="max-width: 140px;">
+        </div>
+        <div class="col-sm-4 col-lg-2">
+          <img alt="" class="img-fluid" data-aos="zoom-in-up" src="/assets/images/brands/frim-foundation.png"
+               style="max-width: 140px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
