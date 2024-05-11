@@ -39,7 +39,7 @@ export class ContactComponent {
     sendEmailCallable({
       message: this.contactForm.controls['subject'].value,
       name: this.contactForm.controls['name'].value,
-      email: this.contactForm.controls['name'].value,
+      email: this.contactForm.controls['email'].value,
       phone: this.contactForm.controls['phone'].value
     })
       .then((result) => {
