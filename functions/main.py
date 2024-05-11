@@ -16,6 +16,7 @@ def send_email(request: https_fn.CallableRequest):
   data = request.data
   message_text = data.get('message')
   name = data.get('name', 'No Name Provided')
+  email = data.get('email', 'No Email Provided')
   phone = data.get('phone', 'No Phone Provided')
 
   receiver_email = "adeleyeadeyemib@gmail.com"
@@ -28,7 +29,7 @@ def send_email(request: https_fn.CallableRequest):
   msg["To"] = receiver_email
   msg["Subject"] = "Contact Email From leatra.com"
 
-  body = f"Name: {name}\nPhone: {phone}\nMessage: {message_text}"
+  body = f"Name: {name}\nEmail: {email}\nPhone: {phone}\nMessage: {message_text}"
   msg.attach(MIMEText(body, 'plain'))
 
   server = smtplib.SMTP('smtp.zoho.com', 587)
