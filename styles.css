@@ -105,8 +105,9 @@ button, input, textarea { font: inherit; }
 
 .statement { min-height: 62dvh; display: grid; grid-template-columns: 1fr 1fr; background: #0c0d13; color: #fff; }
 .statement-copy { align-self: center; max-width: 36rem; padding: 5rem var(--gutter) 5rem 1rem; }
-.statement-copy h2 { margin: 0; font-size: clamp(1.8rem, 2.45vw, 2.6rem); font-weight: 400; letter-spacing: -.045em; line-height: 1.18; }
-.statement-copy p { margin: 1.6rem 0 0; color: #c7c7ca; font-size: clamp(1.1rem, 1.45vw, 1.5rem); line-height: 1.42; }
+.statement-kicker { display: block; margin-bottom: 1.5rem; color: #a9aaae; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.statement-copy h2 { margin: 0; font-size: clamp(2rem, 2.75vw, 3rem); font-weight: 400; letter-spacing: -.05em; line-height: 1.14; text-wrap: balance; }
+.statement-copy p { max-width: 31rem; margin: 2rem 0 0; color: #c7c7ca; font-size: clamp(1rem, 1.25vw, 1.25rem); line-height: 1.5; }
 
 .proof { background: #fff; }
 .testimonial { max-width: 46rem; margin: 0 auto; padding: clamp(6rem, 8.5vw, 8.5rem) var(--gutter); text-align: center; }
@@ -208,6 +209,7 @@ form button:hover { background: #fff; color: #111; }
   .statement { grid-template-columns: 1fr; }
   .statement-space { display: none; }
   .statement-copy { padding: 6rem 1.25rem; }
+  .statement-copy h2 br { display: none; }
   .form-grid { grid-template-columns: 1fr; gap: 0; }
   .contact { padding-inline: 1rem; }
   .contact-card { padding: 2rem 1.3rem; }
