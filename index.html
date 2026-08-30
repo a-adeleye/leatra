@@ -170,13 +170,13 @@
         <div class="contact-card reveal">
           <h2 id="contact-title">Let’s build capability together</h2>
           <p>Tell us what your team is working towards. We’ll help you shape the right starting point.</p>
-          <form data-contact-form novalidate>
+          <form action="https://submit.zappoll.com/LovYBiD4LXB4" method="post" data-contact-form novalidate>
             <div class="form-grid">
-              <label><span>Full name</span><input type="text" name="name" autocomplete="name" required /></label>
-              <label><span>Work email</span><input type="email" name="email" autocomplete="email" required /></label>
+              <label><span>Full name</span><input type="text" name="full_name" autocomplete="name" minlength="5" required /></label>
+              <label><span>Work email</span><input type="email" name="work_email" autocomplete="email" minlength="7" required /></label>
             </div>
-            <label><span>Organisation</span><input type="text" name="organisation" autocomplete="organization" required /></label>
-            <label><span>How can we help?</span><textarea name="message" rows="3" required></textarea></label>
+            <label><span>Organization</span><input type="text" name="organization" autocomplete="organization" minlength="7" required /></label>
+            <label><span>How can we help?</span><textarea name="message" rows="3" minlength="20" required></textarea></label>
             <p class="form-status" data-form-status aria-live="polite"></p>
             <button type="submit">Request a consultation</button>
           </form>
