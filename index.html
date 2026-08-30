@@ -5,15 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Leatra builds practical capability through corporate training, e-learning, skill assessment, and customer experience quality assurance across Africa." />
     <meta name="theme-color" content="#ffffff" />
+    <title>Leatra - Talent built for impact</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="canonical" href="https://leatra.com/" />
     <meta property="og:title" content="Leatra — Talent built for impact" />
     <meta property="og:description" content="Practical learning systems for ambitious teams and organisations across Africa." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/images/leatra-hero.png" />
-    <title>Leatra - Talent built for impact</title>
-    <link rel="icon" href="favicon.ico" />
+    <meta property="og:url" content="https://leatra.com/" />
+    <meta property="og:site_name" content="Leatra" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://leatra.com/assets/images/leatra-social.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Leatra — Talent built for impact" />
+    <meta name="twitter:description" content="Practical learning systems for ambitious teams and organisations across Africa." />
+    <meta name="twitter:image" content="https://leatra.com/assets/images/leatra-social.jpg" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Leatra",
+      "url": "https://leatra.com",
+      "logo": "https://leatra.com/assets/images/leatra-logo-official.png",
+      "description": "Leatra builds practical capability through corporate training, e-learning, skill assessment, and customer experience quality assurance across Africa.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lagos",
+        "addressCountry": "NG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+2347012345555",
+        "contactType": "customer support",
+        "email": "info@leatra.com"
+      }
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="assets/images/leatra-hero-1280.webp" imagesrcset="assets/images/leatra-hero-768.webp 768w, assets/images/leatra-hero-1280.webp 1280w, assets/images/leatra-hero-1536.webp 1536w" imagesizes="(max-width: 1440px) 100vw, 1440px" fetchpriority="high" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" /></noscript>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -29,7 +61,7 @@
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-content reveal">
           <a class="hero-wordmark" href="#top" aria-label="Leatra home">
-            <img src="assets/images/leatra-logo-official.png" alt="Leatra" />
+            <img src="assets/images/leatra-logo-official.png" alt="Leatra" width="600" height="400" />
           </a>
           <h1 id="hero-title">Talent,<br />built for impact.</h1>
           <p>We build practical learning systems for ambitious teams and organisations across Africa.</p>
@@ -42,17 +74,20 @@
         <nav class="service-pills reveal" aria-label="Service shortcuts">
           <a href="#corporate-training">Corporate training</a><a href="#elearning">E-learning</a>
           <a href="#assessment">Skill assessment</a><a href="#quality">CX &amp; quality assurance</a>
-          <a href="#services" aria-label="View all services">···</a>
+          <a href="#services" aria-label="··· View all services">···</a>
         </nav>
         <figure class="hero-media reveal">
-          <img src="assets/images/leatra-hero.png" alt="A leadership workshop with Nigerian executives in a contemporary Lagos office" />
+          <img src="assets/images/leatra-hero-1280.webp" srcset="assets/images/leatra-hero-768.webp 768w, assets/images/leatra-hero-1280.webp 1280w, assets/images/leatra-hero-1536.webp 1536w" sizes="(max-width: 1440px) 100vw, 1440px" width="1536" height="1024" fetchpriority="high" decoding="async" alt="A leadership workshop with Nigerian executives in a contemporary Lagos office" />
           <figcaption>Leadership workshop · Lagos, Nigeria</figcaption>
         </figure>
       </section>
 
       <section class="intro section-shell" id="about" aria-labelledby="intro-title">
-        <p class="intro-copy reveal">We combine business insight and learning design to build the capabilities organisations need—from leadership and customer experience to digital learning and assessment. Every engagement moves from a real performance need to practical, measurable action.</p>
-        <h2 id="intro-title" class="reveal">Build people.<br />Build the future.</h2>
+        <div class="section-label reveal"><span>03</span><span>About us</span></div>
+        <div class="intro-grid reveal">
+          <h2 id="intro-title">Build people.<br />Build the future.</h2>
+          <p class="intro-copy">We combine business insight and learning design to build the capabilities organisations need—from leadership and customer experience to digital learning and assessment. Every engagement moves from a real performance need to practical, measurable action.</p>
+        </div>
       </section>
 
       <section class="impact section-shell" id="impact" aria-labelledby="impact-title">
@@ -71,15 +106,29 @@
       <section class="services section-shell" id="services" aria-labelledby="services-title">
         <div class="section-label reveal"><span>02</span><span>Services</span></div>
         <div class="services-gallery">
-          <figure class="floating-photo photo-a reveal"><img src="assets/images/leatra-training.png" alt="A professional listening during a leadership workshop" /></figure>
-          <figure class="floating-photo photo-b reveal"><img src="assets/images/leatra-elearning.png" alt="A professional completing digital learning in a quiet workspace" /></figure>
-          <figure class="floating-photo photo-c reveal"><img src="assets/images/leatra-assessment.png" alt="Two talent professionals reviewing an assessment" /></figure>
-          <figure class="floating-photo photo-d reveal"><img src="assets/images/leatra-quality.png" alt="A customer experience specialist coaching a team" /></figure>
-          <figure class="floating-photo photo-e reveal"><img src="assets/images/leatra-hero.png" alt="An executive leadership session in Lagos" /></figure>
+          <div class="gallery-col gallery-col-left">
+            <figure class="gallery-photo reveal">
+              <img src="assets/images/leatra-training-480.webp" srcset="assets/images/leatra-training-480.webp 480w, assets/images/leatra-training-768.webp 768w" sizes="(max-width: 960px) 45vw, 24vw" width="768" height="600" loading="lazy" decoding="async" alt="A professional listening during a leadership workshop" />
+            </figure>
+            <figure class="gallery-photo reveal">
+              <img src="assets/images/leatra-quality-480.webp" srcset="assets/images/leatra-quality-480.webp 480w, assets/images/leatra-quality-768.webp 768w" sizes="(max-width: 960px) 45vw, 24vw" width="768" height="600" loading="lazy" decoding="async" alt="A customer experience specialist coaching a team" />
+            </figure>
+          </div>
+
           <div class="services-heading reveal">
             <h2 id="services-title">Four ways to make<br />good teams better.</h2>
-            <p>Move from learning need to visible improvement with one experienced partner.</p>
-            <a class="outline-link" href="#service-list">Show all</a>
+            <span class="services-rule" aria-hidden="true"></span>
+            <p>Move from learning need to visible improvement<br />with one experienced partner.</p>
+            <a class="outline-link" href="#service-list">Show all services <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
+
+          <div class="gallery-col gallery-col-right">
+            <figure class="gallery-photo reveal">
+              <img src="assets/images/leatra-elearning-480.webp" srcset="assets/images/leatra-elearning-480.webp 480w, assets/images/leatra-elearning-768.webp 768w" sizes="(max-width: 960px) 45vw, 24vw" width="768" height="600" loading="lazy" decoding="async" alt="A professional completing digital learning in a quiet workspace" />
+            </figure>
+            <figure class="gallery-photo reveal">
+              <img src="assets/images/leatra-hero-768.webp" width="768" height="600" sizes="(max-width: 960px) 45vw, 24vw" loading="lazy" decoding="async" alt="An executive leadership session in Lagos" />
+            </figure>
           </div>
         </div>
         <div class="service-list" id="service-list">
@@ -91,11 +140,15 @@
       </section>
 
       <section class="statement" aria-labelledby="statement-title">
-        <div class="statement-space" aria-hidden="true"></div>
-        <div class="statement-copy reveal">
-          <span class="statement-kicker">Our mission</span>
-          <h2 id="statement-title">We are committed to building<br />the right talent for Africa<br />for sustainable development.</h2>
-          <p>Every programme is more than a workshop—it’s a commitment to better work.</p>
+        <div class="statement-inner">
+          <div class="statement-label reveal">
+            <span class="statement-kicker">Our mission</span>
+            <span class="statement-rule" aria-hidden="true"></span>
+          </div>
+          <div class="statement-copy reveal">
+            <h2 id="statement-title">We are committed<br />to building<br />the right talent for Africa<br />for sustainable<br />development.</h2>
+            <p>Every programme is more than a workshop—<br />it’s a commitment to better work.</p>
+          </div>
         </div>
       </section>
 
@@ -106,14 +159,14 @@
           <figcaption><strong>GTBank</strong><small>Training participant feedback</small></figcaption>
         </figure>
         <div class="logo-strip reveal" aria-label="Selected clients">
-          <div><img src="assets/brands/gtbank.png" alt="GTBank" /></div><div><img src="assets/brands/interswitch.png" alt="Interswitch" /></div>
-          <div><img src="assets/brands/nis.png" alt="Nigeria Immigration Service" /></div><div><img src="assets/brands/rsw.png" alt="RSW" /></div><div><img src="assets/brands/outcess.png" alt="Outcess" /></div>
-          <div><img src="assets/brands/cash-tokens.png" alt="CashToken Rewards Africa" /></div><div><img src="assets/brands/agpmpn.png" alt="Association of General and Private Medical Practitioners of Nigeria" /></div><div><img src="assets/brands/redeem.png" alt="The Redeemed Christian Church of God" /></div>
+          <div><img src="assets/brands/gtbank.png" alt="GTBank" width="140" height="138" loading="lazy" /></div><div><img src="assets/brands/interswitch.png" alt="Interswitch" width="140" height="38" loading="lazy" /></div>
+          <div><img src="assets/brands/nis.png" alt="Nigeria Immigration Service" width="140" height="71" loading="lazy" /></div><div><img src="assets/brands/rsw.png" alt="RSW" width="140" height="74" loading="lazy" /></div><div><img src="assets/brands/outcess.png" alt="Outcess" width="140" height="36" loading="lazy" /></div>
+          <div><img src="assets/brands/cash-tokens.png" alt="CashToken Rewards Africa" width="140" height="47" loading="lazy" /></div><div><img src="assets/brands/agpmpn.png" alt="Association of General and Private Medical Practitioners of Nigeria" width="140" height="140" loading="lazy" /></div><div><img src="assets/brands/redeem.png" alt="The Redeemed Christian Church of God" width="140" height="140" loading="lazy" /></div>
         </div>
       </section>
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
-        <img class="contact-background" src="assets/images/leatra-contact.png" alt="A refined contemporary consultation lounge overlooking Lagos" />
+        <img class="contact-background" src="assets/images/leatra-contact-1280.webp" srcset="assets/images/leatra-contact-768.webp 768w, assets/images/leatra-contact-1280.webp 1280w, assets/images/leatra-contact-1536.webp 1536w" sizes="100vw" width="1536" height="1024" loading="lazy" decoding="async" alt="A refined contemporary consultation lounge overlooking Lagos" />
         <div class="contact-card reveal">
           <h2 id="contact-title">Let’s build capability together</h2>
           <p>Tell us what your team is working towards. We’ll help you shape the right starting point.</p>
@@ -132,7 +185,7 @@
     </main>
 
     <footer class="site-footer">
-      <a class="footer-wordmark" href="#top" aria-label="Leatra home"><img src="assets/images/leatra-logo-official.png" alt="Leatra" /></a>
+      <a class="footer-wordmark" href="#top" aria-label="Leatra home"><img src="assets/images/leatra-logo-official.png" alt="Leatra" width="600" height="400" loading="lazy" /></a>
       <address><strong>Lagos</strong><a href="tel:+2348081685698">+234 701 234 5555</a><a href="mailto:info@leatra.com">info@leatra.com</a></address>
       <nav aria-label="Footer navigation"><a href="#services">Services</a><a href="#impact">Impact</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
       <p>© <span data-year></span> Leatra Ltd.<br />All rights reserved.</p>
