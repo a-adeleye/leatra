@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your message could not be sent to Leatra." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Something went wrong | Leatra</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" /></noscript>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="confirmation-page">
+    <main class="confirmation-shell" id="main-content">
+      <a class="confirmation-logo" href="/" aria-label="Leatra home">
+        <img src="assets/images/leatra-logo-official.png" alt="Leatra" width="600" height="400" />
+      </a>
+
+      <section class="confirmation-card confirmation-card--error" aria-labelledby="error-title" role="alert">
+        <span class="confirmation-mark" aria-hidden="true">!</span>
+        <p class="confirmation-kicker">Message not sent</p>
+        <h1 id="error-title">Something went wrong.</h1>
+        <p class="error-message" data-error-message>We couldn’t send your message. Please check your details and try again.</p>
+        <a class="confirmation-link" href="/#contact">Try again <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <script>
+      const suppliedMessage = new URLSearchParams(window.location.search).get("message")?.trim();
+      const messageElement = document.querySelector("[data-error-message]");
+
+      if (suppliedMessage) {
+        messageElement.textContent = suppliedMessage.slice(0, 500);
+      }
+    </script>
+  </body>
+</html>

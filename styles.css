@@ -165,6 +165,9 @@ form button:hover { background: #fff; color: #111; }
 .confirmation-link { display: inline-flex; align-items: center; gap: .5rem; font-size: .67rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .confirmation-link span { transition: transform 180ms ease; }
 .confirmation-link:hover span { transform: translateX(3px); }
+.confirmation-card--error .confirmation-mark { border-color: #d5aaa5; color: #a6332a; }
+.confirmation-card--error h1 { max-width: 46rem; margin-inline: auto; font-size: clamp(3.25rem, 7.5vw, 7rem); }
+.confirmation-card--error .error-message { margin-bottom: 2.25rem; }
 
 @keyframes confirmation-countdown { to { transform: scaleX(0); } }
 
